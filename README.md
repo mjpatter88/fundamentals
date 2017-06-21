@@ -2,10 +2,11 @@
 Building a Modern Computer from the Fundamentals
 
 
-01-logic_gates
+01 - logic gates
 ==============
-`ghdl` is used as the hardware simulator
-`gtkwave` is used to view the waveform output of simulations
+`ghdl` is used as the hardware simulator.
+
+`gtkwave` is used to view the waveform output of simulations.
 
 http://ghdl.readthedocs.io/en/latest/Starting_with_GHDL.html#the-hello-world-program
 
