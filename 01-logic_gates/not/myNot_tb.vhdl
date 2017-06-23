@@ -1,9 +1,9 @@
-entity myNot2_tb is
-end myNot2_tb;
+entity myNot_tb is
+end myNot_tb;
 
-architecture behavioral of myNot2_tb is
+architecture behavioral of myNot_tb is
 
-    component myNot2
+    component myNot
         port(i: in bit; o: out bit);
     end component;
 
@@ -13,7 +13,7 @@ architecture behavioral of myNot2_tb is
 
 begin
     -- component instantiation
-    myNot2_1: myNot2 port map(i => s1, o => o1);
+    myNot_1: myNot port map(i => s1, o => o1);
 
     process
     begin

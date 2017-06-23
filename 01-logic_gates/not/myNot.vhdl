@@ -1,8 +1,8 @@
-entity myNot2 is
+entity myNot is
     port(i: in bit; o: out bit);
-end myNot2;
+end myNot;
 
-architecture behavioral of myNot2 is
+architecture behavioral of myNot is
 
     component myNand2
         port(a: in bit; b: in bit; s: out bit);
