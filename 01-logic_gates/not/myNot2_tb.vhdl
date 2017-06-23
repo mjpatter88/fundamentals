@@ -13,7 +13,7 @@ architecture behavioral of myNot2_tb is
 
 begin
     -- component instantiation
-    myNot2_1: myNot2 port map(s1 => i, o1 => o);
+    myNot2_1: myNot2 port map(i => s1, o => o1);
 
     process
     begin
@@ -24,5 +24,8 @@ begin
         s1 <= '1';
         wait for 1 ns;
         assert o1 = '0' report "not('1') was not '0'" severity error;
+
+        assert false report "test complete" severity note;
+        wait;
     end process;
 end behavioral;
