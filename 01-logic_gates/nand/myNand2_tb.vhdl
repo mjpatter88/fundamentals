@@ -34,6 +34,7 @@ begin
         wait for 1 ns;
         assert s = '0' report "1 nand 1 != 0" severity error;
 
+        assert false report "test" severity error;
         assert false report "end of test" severity note;
         wait;
     end process;
