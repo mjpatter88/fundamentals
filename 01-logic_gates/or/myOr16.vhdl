@@ -13,9 +13,9 @@ architecture behavioral of myOr16 is
 
 begin
 
-    generate_ands:
+    generate_ors:
     for i in 0 to 15 generate
         myOr2_i: myOr2 port map(a => a(i), b => b(i), s => s(i));
-    end generate generate_ands;
+    end generate generate_ors;
 
 end behavioral;
