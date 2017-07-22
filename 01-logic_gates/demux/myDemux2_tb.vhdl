@@ -1,17 +1,20 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+
 entity myDemux2_tb is
 end myDemux2_tb;
 
 architecture behavioral of myDemux2_tb is
 
     component myDemux2
-        port(a: in bit; sel: in bit; s: out bit; s2: out bit);
+        port(a: in std_logic; sel: in std_logic; s: out std_logic; s2: out std_logic);
     end component;
 
     -- signals used for testing
-    signal s1: bit;
-    signal sel: bit;
-    signal o1: bit;
-    signal o2: bit;
+    signal s1: std_logic;
+    signal sel: std_logic;
+    signal o1: std_logic;
+    signal o2: std_logic;
 
 begin
     -- component instantiation

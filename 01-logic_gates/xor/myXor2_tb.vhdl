@@ -1,19 +1,22 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+
 entity myXor2_tb is
 end myXor2_tb;
 
 architecture behavorial of myXor2_tb is
 
     component myXor2
-        port(a: in bit; b: in bit; c: out bit);
+        port(a: in std_logic; b: in std_logic; s: out std_logic);
     end component;
 
-    signal s1: bit;
-    signal s2: bit;
-    signal o1: bit;
+    signal s1: std_logic;
+    signal s2: std_logic;
+    signal o1: std_logic;
 
 begin
 
-    myXor2_1: myXor2 port map(a => s1, b => s2, c => o1);
+    myXor2_1: myXor2 port map(a => s1, b => s2, s => o1);
 
     process
     begin

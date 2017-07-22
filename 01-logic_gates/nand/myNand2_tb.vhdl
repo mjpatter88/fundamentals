@@ -1,13 +1,16 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+
 entity myNand2_tb is
 end myNand2_tb;
 
 architecture Behavioral of myNand2_tb is
 
     component myNand2
-        port(a : in bit; b : in bit; s : out bit);
+        port(a : in std_logic; b : in std_logic; s : out std_logic);
     end component;
 
-    signal a, b, s : bit;
+    signal a, b, s : std_logic;
 
 begin
     nand_0: myNand2 port map (a => a, b => b, s => s);

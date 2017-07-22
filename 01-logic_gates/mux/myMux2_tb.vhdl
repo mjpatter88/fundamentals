@@ -1,17 +1,20 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+
 entity myMux2_tb is
 end myMux2_tb;
 
 architecture behavioral of myMux2_tb is
 
     component myMux2
-        port(a: in bit; b: in bit; sel: in bit; s: out bit);
+        port(a: in std_logic; b: in std_logic; sel: in std_logic; s: out std_logic);
     end component;
 
     -- signals used for testing
-    signal s1: bit;
-    signal s2: bit;
-    signal sel: bit;
-    signal o1: bit;
+    signal s1: std_logic;
+    signal s2: std_logic;
+    signal sel: std_logic;
+    signal o1: std_logic;
 
 begin
     -- component instantiation

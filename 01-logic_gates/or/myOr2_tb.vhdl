@@ -1,22 +1,25 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+
 entity myOr2_tb is
 end myOr2_tb;
 
 architecture behavorial of myOr2_tb is
 -- component declarations
     component myOr2
-        port(a: in bit; b: in bit; o: out bit);
+        port(a: in std_logic; b: in std_logic; s: out std_logic);
     end component;
 
 -- signal declations
-    signal s1: bit;
-    signal s2: bit;
-    signal o1: bit;
+    signal s1: std_logic;
+    signal s2: std_logic;
+    signal o1: std_logic;
 
 
 begin
 -- component instantiation and port mapping
 
-    myOr2_a: myOr2 port map(a => s1, b => s2, o => o1);
+    myOr2_a: myOr2 port map(a => s1, b => s2, s => o1);
 
     process
     begin

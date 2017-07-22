@@ -1,16 +1,19 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+
 entity myAnd2_tb is
 end myAnd2_tb;
 
 architecture behavioral of myAnd2_tb is
 
     component myAnd2
-        port(a: in bit; b: in bit; s: out bit);
+        port(a: in std_logic; b: in std_logic; s: out std_logic);
     end component;
 
     -- signals used for testing
-    signal s1: bit;
-    signal s2: bit;
-    signal o1: bit;
+    signal s1: std_logic;
+    signal s2: std_logic;
+    signal o1: std_logic;
 
 begin
     -- component instantiation
